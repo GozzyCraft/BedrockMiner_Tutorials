@@ -1,0 +1,8 @@
+< en_US.lang - English localization file for the mod GozzyCraft >
+
+# Items
+item.tutorial_item.name=Tutorial Item
+item.item_gozzy_head.name=Gozzy's Head
+
+# Blocks
+tile.tutorial_block.name=Tutorial Block

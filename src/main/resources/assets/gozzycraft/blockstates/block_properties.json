@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=white": { "model":"gozzycraft:block_properties_white" },
+        "type=black": { "model":"gozzycraft:block_properties_black" },
+        "type=green": { "model":"gozzycraft:block_properties_green" }
+    }
+}

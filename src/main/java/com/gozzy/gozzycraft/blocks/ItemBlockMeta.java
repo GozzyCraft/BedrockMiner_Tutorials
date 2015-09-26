@@ -1,0 +1,36 @@
+package com.gozzy.gozzycraft.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+/**
+ * 
+ * @author Gozzy
+ * This Class can be used for every block with metadata
+ */
+public class ItemBlockMeta extends ItemBlock
+{
+
+	public ItemBlockMeta(Block block) 
+	{
+		super(block);
+		if(!(block instanceof IMetaBlockName))
+		{
+			throw new IllegalArgumentException(String.format("The given Block %s is not an instance of ISpecialBlockName!", block.getUnlocalizedName()));
+		}
+		this.setMaxDamage(0);
+		this.setHasSubtypes(true);
+	}
+	
+	public int getMetadata(int damage)
+	{
+		return damage;
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack stack)
+	{
+		return super.getUnlocalizedName(stack) + "_" + ((IMetaBlockName)this.block).getSpecialName(stack);
+	}
+
+}

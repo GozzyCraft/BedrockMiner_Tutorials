@@ -1,0 +1,16 @@
+[
+{
+  "modid": "GozzyCraft",
+  "name": "GozzyCraft",
+  "description": "This Mod adds items what are used on the public GozzyCraft Server.",
+  "version": "1.0",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Gozzy"],
+  "credits": "Forge/FML,my teachers Pahimar/MrGrayfish/NealeGaming",
+  "logoFile": "gozzycraft.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
