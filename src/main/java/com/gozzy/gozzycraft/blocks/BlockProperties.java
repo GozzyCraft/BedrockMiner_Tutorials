@@ -36,6 +36,12 @@ public class BlockProperties extends Block implements IMetaBlockName
 		this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, EnumType.WHITE));
 	}
 	
+	@Override
+	public int damageDropped(IBlockState state) 
+	{
+		return getMetaFromState(state);
+	}
+	
 	/**
 	 * This methods returns a BlockState which contains every property the block has
 	 */
